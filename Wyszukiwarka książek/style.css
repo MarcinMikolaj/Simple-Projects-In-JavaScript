@@ -1,0 +1,105 @@
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #333030;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 800px;
+	background-color: rgb(223, 223, 223);
+	box-shadow: 0 0 15px black;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.header {
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background-image: url('./image/hero.jpg');
+	background-size: cover;
+	background-position: center;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	overflow: hidden;
+	z-index: 0;
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(61, 37, 30, 0.7);
+	z-index: -1;
+}
+
+.header h1 {
+	position: absolute;
+	top: 40px;
+	margin-left: 20px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: white;
+}
+
+.search-input {
+	position: absolute;
+	bottom: 30px;
+	width: 90%;
+	padding: 20px 25px;
+	border: none;
+	margin-left: 20px;
+	border-radius: 3px;
+	background-color: rgba(238, 235, 235, 0.85);
+}
+
+.search-input:hover {
+	background-color: white;
+}
+
+.search-input:focus {
+	outline: none;
+	border: 1px solid white;
+	box-shadow: 0px 0px 5px rgb(251, 246, 246);
+}
+
+.products {
+	position: relative;
+}
+
+.products h3 {
+	margin-top: 16px;
+	margin-bottom: 25px;
+	margin-left: 25px;
+	font-size: 20px;
+	letter-spacing: 1px;
+	color: rgb(82, 80, 80);
+}
+
+.products-list-ul {
+	font-size: 20px;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.products-list-ul li {
+	border-bottom: 1px solid rgb(180, 178, 178);
+	margin: 13px 30px;
+}
+
+.products-list-ul li:last-child {
+	border-bottom: none;
+}
