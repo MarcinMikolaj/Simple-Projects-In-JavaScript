@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcin Mikołajczyk">
+    <title>MyNotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/91d2f81fc7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <h1 class="logo"><i class="fas fa-sticky-note"></i> MyNotepad</h1>
+        <div class="button-position">
+            <button class="add-note-btn"><i class="fas fa-plus"></i> add</button>
+            <button class="remove-all-note-btn"><i class="fas fa-trash-alt"></i> remove all</button>
+        </div>
+    </nav>
+
+    <div class="note-area"></div>
+
+    <div class="note-panel">
+        <h2 class="note-panel-title">Add note</h2>
+        <label for="select-category">Choose your category</label>
+        <select id="select-category">
+            <option value="0" disabled selected>-Choose your category-</option>
+            <option value="1">Shopping</option>
+            <option value="2">Work</option>
+            <option value="3">Other</option>
+        </select>
+
+        <label for="text-area">Enter the text of the note</label>
+        <textarea id="text-area"></textarea>
+
+        <p class="note-panel-error">You have to select categories and save the note</p>
+
+        <div class="note-panel-buttons">
+            <button class="add-note-btn-panel"><i class="fas fa-save"></i> add</button>
+            <button class="cancel-note-btn-panel"><i class="far fa-window-close"></i> cancel</button>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy 2022 | <span class="author">Marcin Mikołajczyk</span></p>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
